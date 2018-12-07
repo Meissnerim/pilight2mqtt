@@ -26,8 +26,11 @@ down.
 Modify pilight2mqtt.service with the start argumetns you need
 
 ```
-cp pilight2mqtt.service /lib/systemd/system/pilight2mqtt.service
-systemctl daemon-reload
-systemctl start pilight2mqtt.service
+sudo cp pilight2mqtt.service /lib/systemd/system/pilight2mqtt.service
+# Only if the file previously existed
+sudo systemctl daemon-reload
+# to start pilight2mqtt
+sudo systemctl start pilight2mqtt.service
+# to enable startup at boot
 systemctl enable pilight2mqtt.service
 ```
