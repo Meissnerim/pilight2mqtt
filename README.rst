@@ -30,3 +30,12 @@ Build Status
 Requirements
 ------------
 * Python 3.4+
+
+
+systemd service
+-----------------
+Modify pilight2mqtt.service with the start argumetns you need
+cp pilight2mqtt.service /lib/systemd/system/pilight2mqtt.service
+systemctl daemon-reload
+systemctl start pilight2mqtt.service
+systemctl enable pilight2mqtt.service
